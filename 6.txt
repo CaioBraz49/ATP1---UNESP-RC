@@ -1,0 +1,18 @@
+// DEFINIR VARIAVEIS
+inteiros prova1, prova2, prova3, media
+
+inicio da funcao()
+// CALCULAR MEDIA
+media = (prova1 + prova2 + prova3) / 3
+
+se media for maior ou igual a 5 { // CONSIDERANDO 5 COMO NOTA DE CORTE
+    exibe mensagem ("Aluno passou de ano!")
+    retorne 0
+}
+
+caso contrario {
+    exibe mensagem ("Aluno nao passou de ano!")
+    retorne 0
+}
+
+fim da funcao
