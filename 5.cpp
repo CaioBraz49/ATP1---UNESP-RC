@@ -27,7 +27,7 @@ int main()
         //  TERMO A TERMO PARA VER SE ELA POSSUI ALGUM CARACTERE QUE NAO SEJA UM INT
 
         // VERIFICA SE O CARACTERE E UM INT
-        for (int i = 0; i < strlen(input); i++) {
+        for (int i = 0; i < int(strlen(input)); i++) {
             if (!isdigit(input[i])) {
                 eh_int = false; // SE ENCONTRAR UM CARACTERE NAO NUMERICO MARCA COMO FALSO
                 break;
@@ -49,7 +49,7 @@ int main()
         printf("Numero 2: ");
         scanf("%s", input); 
 
-        for (int i = 0; i < strlen(input); i++) {
+        for (int i = 0; i < int(strlen(input)); i++) {
             if (!isdigit(input[i])) {
                 eh_int = false;
                 break;
@@ -95,8 +95,14 @@ int main()
     }
     
     if (operacao == 4) { // NUMERO DA DIVISAO
-        numerofinal = numero1 / numero2;
-        printf("\n\nA divisao de %i e %i é %i!", numero1, numero2, numerofinal);
+        if (numero2 != 0) {
+            numerofinal = numero1 / numero2;
+            printf("\n\nA divisao de %i e %i é %i!", numero1, numero2, numerofinal);
+        }
+        else {
+            printf("\nDivisão por zero o computador explode!");
+            return(1);
+        }
     }
     
     getchar();
