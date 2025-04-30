@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float a, b, c, x;
+float a, b, c;
 
-float quadratica(float a, float b, float c, float x) {  // aplica a formula quadratica para todos os valores de a, b, c e x
+float quadratica(float x) {  // aplica a formula quadratica para todos os valores de a, b, c e x
     return((a * x * x) + (b * x) + c);
 }
 
 
 int main() {
+    float x;
     // escolhendo os valores
     printf("Escolha A: ");
     scanf("%f", &a);
@@ -19,7 +20,7 @@ int main() {
     printf("Escolha X: ");
     scanf("%f", &x);
 
-    printf("\n%f", quadratica(a, b, c, x)); 
+    printf("\n%f", quadratica(x)); 
 
     getchar();
     return(0);
