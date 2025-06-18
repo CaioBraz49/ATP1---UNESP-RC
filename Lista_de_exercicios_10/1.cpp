@@ -3,18 +3,16 @@
 
 int count = 0;
 
-int main (){
-    
-float *realPtr = NULL;
-long *integerPtr = NULL;
-(float *)integerPtr = *realPtr;
+int main() {
     count++;
-    printf("count = %d", count);
+    printf("Chamada da funcao main, count = %d\n", count);
 
     if (count < 10) {
-        return(main());
+        return main();
     }
 
+    printf("\nFim da recursao. Pressione Enter para finalizar o programa.\n");
     getchar();
+
     return 0;
 }
