@@ -1,0 +1,37 @@
+a)
+int num = 10; 
+int *number = &num; 
+printf("%d\n", *number); 
+
+b)
+float *realPtr = NULL;
+float *integerPtr = NULL;
+integerPtr = realPtr;
+
+c)
+int *x;
+int y = 50;
+x = &y;
+
+d)
+char s[] = "um array de caracteres";
+for (int i = 0; s[i] != '\0'; i++) {
+    printf("%c ", s[i]);
+}
+
+e) 
+short number = 10;
+short *numPtr = &number;
+short result;
+void *genericPtr = numPtr;
+result = *( (short*)genericPtr ) + 7;
+printf("Resultado: %d\n", result); 
+
+f) 
+float x = 19.34;
+float *xPtr = &x; 
+printf("Valor apontado: %f\n", *xPtr);
+
+g)
+char *s = "String";
+printf("%s\n", s);
