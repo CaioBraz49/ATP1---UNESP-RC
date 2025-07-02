@@ -1,0 +1,12 @@
+11
+iced_cappuccino 15
+completao 25
+cappuccino_italiano 13
+bao 9
+mio 11
+moca 13
+microlote 15
+divino_maravilhoso 20
+pao_de_queijo 10
+coxinha 10
+julieta_e_romeu 17
